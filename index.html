@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="test4 fixed__screen">
+        <button id="scroll-top-btn" class="test4 fixed__screen--btn">Top</button>
+    </div>
+    <aside id="aside" class="aside effect__left">
+        <div class="aside__header__box">
+            <div class="test aside__header__box__center">
+                <div class="test2 aside__header__box__thumb__box">
+                    <div class="test aside__header__box__thumb__box__icon">
+                        <i class="fas fa-user-alt"></i>
+                    </div>
+                </div>
+                <div class="test2 aside__header__box__id__box">
+                    <span class="aside__header__box__id__box--nick">keke0123</span>
+                    <span class="aside__header__box__id__box--mail">keke0123@naver.com</span>
+                </div>
+                <div class="test2 aside__header__box__iconbox">
+                    <div id="close__menu__btn" class="test4 aside__header__box__iconbox__icon">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="test4 aside__header__box__iconbox__icon">
+                        <i class="far fa-bell"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="test3 aside__menu">
+            <div id="menu__box__container" class="test aside__menu__box">
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="far fa-envelope"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">메일</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="far fa-sticky-note"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">쪽지</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="far fa-star"></i>
+                    </span>                
+                    <span class="aside__menu__box__menubox__icon--letter">북마크</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="far fa-comment-alt"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">톡톡</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="fas fa-coffee"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">카페</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="fab fa-blogger"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">블로그</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">지식iN</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">네이버쇼핑</span>
+                </div>
+                <div class="test2 aside__menu__box__menubox">
+                    <span class="aside__menu__box__menubox__icon">
+                        <i class="fas fa-torah"></i>
+                    </span>
+                    <span class="aside__menu__box__menubox__icon--letter">웹툰</span>
+                </div>
+                <div id="menu__add__box" class="test2 aside__menu__box__menubox">
+                    <span id="add__menu__block" class="aside__menu__box__menubox__icon">
+                        <i class="test fas fa-plus"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="test4 aside__menu__optionbox">
+                <div class="test2 aside__menu__optionbox__menubox">
+                    <div class="test aside__menu__optionbox__menubox__menu">
+                        <i class="fas fa-redo"></i>&nbsp;
+                        <span class="aside__menu__optionbox__menubox__menu--letter">초기화</span>
+                    </div>
+                    <div class="test aside__menu__optionbox__menubox__menu">
+                        <i class="fas fa-sync-alt"></i>&nbsp;
+                        <span class="aside__menu__optionbox__menubox__menu--letter">순서</span>
+                    </div>
+                </div>
+                <div class="test2 aside__menu__optionbox__menubox__other">
+                    <div class="test aside__menu__optionbox__menubox__menu">
+                        <h4 class="aside__menu__optionbox__menubox__menu--letter">전체보기</h4>&nbsp;
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        <div>
+            <h3>test aside</h3>
+        </div>
+    </aside>
+    <header class="header">
+        <div class="test header__box">
+            <div class="test header__box__icon">
+                <div class="test2 header__box__icon--num">
+                    <p class="test2 header__box__icon--p">2</p>
+                </div>
+                <i id="aside_menu_popup_btn" class="fas fa-bars"></i>
+            </div>
+            <div class="test header__box__title">
+                <span class="test2 header__box__title__link">NAVER</span>
+            </div>
+        </div>
+        <div class="test2 header__box2">
+            <div class="test3 header__box2__iconbox">
+                <div class="test header__box2__iconbox--icon">
+                    <i class="fas fa-map-marker-alt header__box2__iconbox--icon--color"></i>
+                </div>
+                <div class="test header__box2__iconbox--icon">
+                    <i class="fas fa-camera header__box2__iconbox--icon--color"></i>
+                </div>
+                <div class="test header__box2__iconbox--icon">
+                    <i class="fas fa-microphone header__box2__iconbox--icon--color"></i>
+                </div>
+            </div>
+            <label for="search"></label>
+            <input type="text" id="search" class="header__box2__input" />
+        </div>
+    </header>
+    <nav class="test nav">
+        <div class="test nav__tab">
+            <div class="test nav__tab__overbox">
+                <div class="test3 nav__tab__overbox--textbox">
+                    <h4 class="test2 nav__tab__overbox--textbox--h4">책문화</h4>
+                </div>
+                <div class="test3 nav__tab__overbox--textbox">
+                    <h4 class="test2 nav__tab__overbox--textbox--h4">뉴스</h4>
+                </div>
+                <div class="test3 nav__tab__overbox--textbox">
+                    <h4 class="test2 nav__tab__overbox--textbox--h4">연애</h4>
+                </div>
+                <div class="test3 nav__tab__overbox--textbox">
+                    <h4 class="test2 nav__tab__overbox--textbox--h4">스포츠</h4>
+                </div>
+                <div class="test3 nav__tab__overbox--textbox">
+                    <h4 class="test2 nav__tab__overbox--textbox--h4">쇼핑</h4>
+                </div>
+                <div class="test3 nav__tab__overbox--textbox">
+                    <h4 class="test2 nav__tab__overbox--textbox--h4">우리동네</h4>
+                </div>
+                <div class="test3 nav__tab__overbox--textbox">
+                    <h4 class="test2 nav__tab__overbox--textbox--h4">MY구독</h4>
+                </div>
+                
+            </div>
+        </div>
+    
+        <div class="test2 nav__icon">
+            <div class="nav__icon__plus">
+                <i class="fas fa-plus"></i>
+            </div>
+        </div>
+    </nav>
+    <main class="test main">
+        <article class="test2 article article__01">
+            <div class="test article__01__img">
+                <img style="width:100%;" src="./assets/img/logo01.png" alt="">
+            </div>
+            <div class="test article__01__title">
+                <h4 class="article__01__title--h4">ios에서 새로운 네이버를 경험하세요</h3>
+                <p class="article__01__title--p">최신 버전에서 선택하기 ></p>
+            </div>
+        </article>
+        <article class="test2 article article__02">
+            <div class="test article__02__title">
+                <h4 class="article__02__title--h4">책 권하는 사회</h4>
+                <p class="article__02__title--p">지금 책 한 권 어때요?</p>
+            </div>
+            <div class="test article__02__card">
+                <div class="test2 article__02__card__01">
+                    <div class="article__02__card--imgbox">
+                        <img class="article__02__card--img" src="assets/img/img00.jpg" alt="">
+                    </div>
+                    <p class="article__02__card--title">인생이 바뀌는 '약한 연결'의 힘</p>
+                    <p class="article__02__card--p">'친구의 친구'</p>
+                </div>
+                <div class="test2 article__02__card__02">
+                    <div class="article__02__card--imgbox--half">
+                        <img class="article__02__card--img" src="assets/img/img01.jpg" alt="">
+                    </div>
+                    <div class="article__02__card--imgbox--half">
+                        <img class="article__02__card--img" src="assets/img/img02.jpg" alt="">
+                    </div>
+                    <div style="clear:both"></div>
+                    <p class="article__02__card--title">40대에 전성기를 만든 '그들'의 비결은?</p>
+                    <p class="article__02__card--p article__02__card__02--p">'40대를 후회 없이 살기 위한 그들의 노력</p>
+                </div>
+                <br>
+            </div>
+        </article>
+        <article class="test2 article article__03">
+            <div class="article__03--imgbox">
+                <img class="article__03__card--img" src="./assets/img/img03.PNG" alt="">
+            </div>
+        </article>
+        <article class="test2 article article__04">
+            <div class="article__04__card">
+                <div class="test article__04__card__title">
+                    <p class="test2 article__04__card__title--p">출간 임박! 기다렸다 '이 책'</p>
+                </div>
+                <hr class="article__04__card--hr"/>
+                <div class="test article__04__card__news">
+                    <div class="test2 article__04__card__news--img">
+                        <img class="article__04__card__news--img--img" src="./assets/img/img05.jpg" alt="">
+                    </div>
+                    <div class="test2 article__04__card__news--title">
+                        <div class="test3 article__04__card__news--letter">
+                            <h4 class="article__04__card__news--letter--title">'무기력에서 무를 빼는 가장 쉬운 방법'</h4>
+                            <p class="article__04__card__news--letter--content">매일 결심만 하는 이들을 위한 무기는 어쩌구 저쩌구</p>
+                            <p class="article__04__card__news--letter--name">흐름출판</p>
+                        </div>
+                    </div>
+                </div>    
+                <hr class="article__04__card--hr"/>
+                <div class="test article__04__card__news">
+                    <div class="test2 article__04__card__news--img">
+                        <img class="article__04__card__news--img--img" style="transform: translateY(-60%); " src="./assets/img/img06.jpg" alt="">
+                    </div>
+                    <div class="test2 article__04__card__news--title">
+                        <div class="test3 article__04__card__news--letter">
+                            <h4 class="article__04__card__news--letter--title">'열여섯 밤의 주방'</h4>
+                            <p class="article__04__card__news--letter--content">이곳은 맛집인가, 지옥인가?</p>
+                            <p class="article__04__card__news--letter--name">사계절출판사</p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="article__04__card--hr"/>
+                <div class="test article__04__card__news">
+                    <div class="test2 article__04__card__news--img">
+                        <img class="article__04__card__news--img--img" src="./assets/img/img07.jpg" alt="">
+                    </div>
+                    <div class="test2 article__04__card__news--title">
+                        <div class="test3 article__04__card__news--letter">
+                            <h4 class="article__04__card__news--letter--title">'공부머리 최고의 육아법'</h4>
+                            <p class="article__04__card__news--letter--content">아이의 '왜?'라는 질문에 대한 부모의 어쩌구 저쩌구</p>
+                            <p class="article__04__card__news--letter--name">오리진하우스</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="test2 article article__05">
+            <div class="test article__05--imgbox">
+                <img class="article__05__card--img" src="./assets/img/img10.PNG" alt="">
+            </div>
+        </article>
+        <article class="test2 article article__06">
+            <div class="test3 article__06__title">
+                <span class="test4 article__06__title--title">자기계발 화제의 신간 10</span>
+                <span class="test4 article__06__title--content">지금 나에게 필요한 책은?</span>
+            </div>
+            <hr class="article__04__card--hr"/>
+            <div class="test2 article__06__content__container">
+                <div class="test4 article__06__content__scrollbox">
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test article__06__content__box">
+                        <div class="test3 article__06__content__imgbox">
+                            <img class="article__06__content__img" src="./assets/img/book03.jpg" alt="">
+                        </div>
+                        <div class="test2 article__06__content__letterbox">
+                            <div class="test4 article__06__content__letterbox--title">
+                                40일 만에 기억력 천재가 어쩌구 저쩌구
+                            </div>
+                            <div class="test4 article__06__content__letterbox--writer">
+                                개러스 무어
+                            </div>
+                            <div class="test4 article__06__content__letterbox--publish">
+                                미디어숲
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="test2 article article__07">
+            <div class="test article__07__container">
+                <div class="test3 article__07__box__title">
+                    <span class="test4 article__07__box__title__01">BEST</span>
+                    <span class="test4 article__07__box__title__02">많이 본 인기 콘텐츠</span>
+                </div>
+                <div class="test3 article__07__box__subtitle">
+                    <div class="test3 article__07__box__subtitle--letter article__07__box__subtitle--letter--focus">
+                        <a href="javascript:">한주간 베스트</a> 
+                    </div>
+                    <div class="test article__07__box__subtitle--bar"></div>
+                    <div class="test3 article__07__box__subtitle--letter">
+                        <a href="javascript:">어제의 베스트</a>    
+                    </div>
+                </div>
+                <div class="test3 article__07__box__content article__07__box__content--show">
+                    <div class="test article__07__box__content__smallbox">
+                        <div class="test3 article__07__box__content__smallbox__letterbox">
+                            <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                <span>1</span>
+                            </div>
+                            <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                <span>
+                                    처음 만난 사람의 세계를 알 수 있는 질문
+                                </span>
+                            </div>
+                        </div>
+                        <div class="test3 article__07__box__content__smallbox__imgbox">
+                            <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/best01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="test article__07__box__content__smallbox">
+                        <div class="test3 article__07__box__content__smallbox__letterbox">
+                            <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                <span>2</span>
+                            </div>
+                            <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                <span>
+                                    처음 만난 사람의 세계를 알 수 있는 질문
+                                </span>
+                            </div>
+                        </div>
+                        <div class="test3 article__07__box__content__smallbox__imgbox">
+                            <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/best01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="test article__07__box__content__smallbox">
+                        <div class="test3 article__07__box__content__smallbox__letterbox">
+                            <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                <span>3</span>
+                            </div>
+                            <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                <span>
+                                    처음 만난 사람의 세계를 알 수 있는 질문
+                                </span>
+                            </div>
+                        </div>
+                        <div class="test3 article__07__box__content__smallbox__imgbox">
+                            <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/best01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="test article__07__box__content__smallbox">
+                        <div class="test3 article__07__box__content__smallbox__letterbox">
+                            <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                <span>4</span>
+                            </div>
+                            <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                <span>
+                                    처음 만난 사람의 세계를 알 수 있는 질문
+                                </span>
+                            </div>
+                        </div>
+                        <div class="test3 article__07__box__content__smallbox__imgbox">
+                            <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/best01.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="test article__07__box__content__smallbox">
+                        <div class="test3 article__07__box__content__smallbox__letterbox">
+                            <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                <span>5</span>
+                            </div>
+                            <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                <span>
+                                    처음 만난 사람의 세계를 알 수 있는 질문
+                                </span>
+                            </div>
+                        </div>
+                        <div class="test3 article__07__box__content__smallbox__imgbox">
+                            <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/best01.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="test3 article__07__box__content">
+                        <div class="test article__07__box__content__smallbox">
+                            <div class="test3 article__07__box__content__smallbox__letterbox">
+                                <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                    <span>1</span>
+                                </div>
+                                <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                    <span>
+                                        인생이 바뀌는 '약한 연결'의 힘
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="test3 article__07__box__content__smallbox__imgbox">
+                                <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/img02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="test article__07__box__content__smallbox">
+                            <div class="test3 article__07__box__content__smallbox__letterbox">
+                                <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                    <span>2</span>
+                                </div>
+                                <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                    <span>
+                                        인생이 바뀌는 '약한 연결'의 힘
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="test3 article__07__box__content__smallbox__imgbox">
+                                <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/img02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="test article__07__box__content__smallbox">
+                            <div class="test3 article__07__box__content__smallbox__letterbox">
+                                <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                    <span>3</span>
+                                </div>
+                                <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                    <span>
+                                        인생이 바뀌는 '약한 연결'의 힘
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="test3 article__07__box__content__smallbox__imgbox">
+                                <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/img02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="test article__07__box__content__smallbox">
+                            <div class="test3 article__07__box__content__smallbox__letterbox">
+                                <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                    <span>4</span>
+                                </div>
+                                <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                    <span>
+                                        인생이 바뀌는 '약한 연결'의 힘
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="test3 article__07__box__content__smallbox__imgbox">
+                                <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/img02.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="test article__07__box__content__smallbox">
+                            <div class="test3 article__07__box__content__smallbox__letterbox">
+                                <div class="test4 article__07__box__content__smallbox__letterbox--01">
+                                    <span>5</span>
+                                </div>
+                                <div class="test4 article__07__box__content__smallbox__letterbox--02">
+                                    <span>
+                                        인생이 바뀌는 '약한 연결'의 힘
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="test3 article__07__box__content__smallbox__imgbox">
+                                <img class="article__07__box__content__smallbox__imgbox--img" src="./assets/img/img02.jpg" alt="">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+        </article>
+        
+    </main>
+    
+    <footer class="test footer">
+        <div class="test2 footer-box">
+            <div class="test3 footer-box__test">test
+            </div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+            <div class="test3 footer-box__test">test</div>
+        </div>
+        <div class="test2 footer-box">
+            <div class="test test-gradient">
+                <span class="test-gradient--span">test</span>
+            </div>
+        </div>
+        
+    </footer>
+
+    
+
+    <script src="./public/js/jquery-3.3.1.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
